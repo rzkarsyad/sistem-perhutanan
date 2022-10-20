@@ -65,21 +65,30 @@
                 <div class="modal-body">
                     <div class="mb-3">
                         <label for="produksi_mkp_old" class="form-label">Produksi MKP Periode Lalu</label>
-                        <input type="text" wire:model="produksi_mkp_old" class="form-control">
+                        <div class="input-group mb-1">
+                            <input type="text" wire:model="produksi_mkp_old" class="form-control">
+                            <span class="input-group-text" id="basic-addon2">Kg</span>
+                        </div>
                         @error('produksi_mkp_old')
                         <span class="error">{{ $message }}</span>
                         @enderror
                     </div>
                     <div class="mb-3">
                         <label for="produksi_mkp_now" class="form-label">Produksi MKP Periode Sekarang</label>
-                        <input type="text" wire:model="produksi_mkp_now" class="form-control">
+                        <div class="input-group mb-1">
+                            <input type="text" wire:model="produksi_mkp_now" class="form-control">
+                            <span class="input-group-text" id="basic-addon2">Kg</span>
+                        </div>
                         @error('produksi_mkp_now')
                         <span class="error">{{ $message }}</span>
                         @enderror
                     </div>
                     <div class="mb-3">
                         <label for="produksi_mkp_total" class="form-label">Total Produksi MKP</label>
-                        <input type="text" wire:model="produksi_mkp_total" class="form-control">
+                        <div class="input-group mb-1">
+                            <input type="text" wire:model="produksi_mkp_total" class="form-control">
+                            <span class="input-group-text" id="basic-addon2">Kg</span>
+                        </div>
                         @error('produksi_mkp_total')
                         <span class="error">{{ $message }}</span>
                         @enderror

@@ -40,7 +40,10 @@
                     </div>
                     <div class="mb-3">
                         <label for="produksi_dkp" class="form-label">Produksi DKP</label>
-                        <input type="text" wire:model="produksi_dkp" class="form-control">
+                        <div class="input-group mb-1">
+                            <input type="text" wire:model="produksi_dkp" class="form-control">
+                            <span class="input-group-text" id="basic-addon2">Kg</span>
+                        </div>
                         @error('produksi_dkp')
                         <span class="error">{{ $message }}</span>
                         @enderror
@@ -54,7 +57,10 @@
                     </div>
                     <div class="mb-3">
                         <label for="produksi_mkp" class="form-label">Produksi MKP</label>
-                        <input type="text" wire:model="produksi_mkp" class="form-control">
+                        <div class="input-group mb-1">
+                            <input type="text" wire:model="produksi_mkp" class="form-control">
+                            <span class="input-group-text" id="basic-addon2">Kg</span>
+                        </div>
                         @error('produksi_mkp')
                         <span class="error">{{ $message }}</span>
                         @enderror
