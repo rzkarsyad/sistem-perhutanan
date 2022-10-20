@@ -1,0 +1,31 @@
+{
+  "menu": [
+    {
+      "url": "/",
+      "name": "Dashboard",
+      "icon": "menu-icon tf-icons bx bx-home-circle",
+      "slug": "dashboard"
+    },
+
+    {
+      "url": "/admin/produksi",
+      "name": "Produksi",
+      "icon": "menu-icon tf-icons bx bx-collection",
+      "slug": "admin-produksi"
+    },
+
+    {
+      "url": "/admin/realisasi",
+      "name": "Realisasi",
+      "icon": "menu-icon tf-icons bx bx-package",
+      "slug": "admin-realisasi"
+    },
+
+    {
+      "url": "/admin/penjualan",
+      "name": "Penjualan",
+      "icon": "menu-icon tf-icons bx bx-receipt",
+      "slug": "admin-penjualan"
+    }
+  ]
+}

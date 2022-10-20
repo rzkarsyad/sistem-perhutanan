@@ -1,0 +1,52 @@
+{
+  "menu": [
+    {
+      "url": "/",
+      "name": "Dashboard",
+      "icon": "menu-icon tf-icons bx bx-home-circle",
+      "slug": "dashboard"
+    },
+
+    {
+      "url": "/asper/petani",
+      "name": "Petani",
+      "icon": "menu-icon tf-icons bx bx-group",
+      "slug": "asper-petani"
+    },
+
+    {
+      "url": "/asper/pengolah",
+      "name": "Pengolah",
+      "icon": "menu-icon tf-icons bx bx-id-card",
+      "slug": "asper-pengolah"
+    },
+
+    {
+      "url": "/asper/petak",
+      "name": "Petak",
+      "icon": "menu-icon tf-icons bx bx-layout",
+      "slug": "asper-petak"
+    },
+
+    {
+      "url": "/asper/produksi",
+      "name": "Produksi",
+      "icon": "menu-icon tf-icons bx bx-collection",
+      "slug": "asper-produksi"
+    },
+
+    {
+      "url": "/asper/realisasi",
+      "name": "Realisasi",
+      "icon": "menu-icon tf-icons bx bx-package",
+      "slug": "asper-realisasi"
+    },
+
+    {
+      "url": "/asper/penjualan",
+      "name": "Penjualan",
+      "icon": "menu-icon tf-icons bx bx-receipt",
+      "slug": "asper-penjualan"
+    }
+  ]
+}

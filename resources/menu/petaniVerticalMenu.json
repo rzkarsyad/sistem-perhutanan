@@ -1,0 +1,17 @@
+{
+  "menu": [
+    {
+      "url": "/",
+      "name": "Dashboard",
+      "icon": "menu-icon tf-icons bx bx-home-circle",
+      "slug": "dashboard"
+    },
+
+    {
+      "url": "/petani/produksi",
+      "name": "Produksi",
+      "icon": "menu-icon tf-icons bx bx-collection",
+      "slug": "petani-produksi"
+    }
+  ]
+}
