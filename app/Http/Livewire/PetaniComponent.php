@@ -16,7 +16,7 @@ class PetaniComponent extends Component
         return [
             'nama' => 'required',
             'alamat' => 'required',
-            'no_hp' => 'required|integer',
+            'no_hp' => 'required',
         ];
     }
 

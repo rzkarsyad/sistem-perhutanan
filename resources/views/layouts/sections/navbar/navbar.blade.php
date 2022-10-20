@@ -6,7 +6,9 @@ $navbarDetached = ($navbarDetached ?? '');
 
 <!-- Navbar -->
 @if(isset($navbarDetached) && $navbarDetached == 'navbar-detached')
-<nav class="layout-navbar {{$containerNav}} navbar navbar-expand-xl {{$navbarDetached}} align-items-center bg-navbar-theme" id="layout-navbar">
+<nav
+  class="layout-navbar {{$containerNav}} navbar navbar-expand-xl {{$navbarDetached}} align-items-center bg-navbar-theme"
+  id="layout-navbar">
   @endif
   @if(isset($navbarDetached) && $navbarDetached == '')
   <nav class="layout-navbar navbar navbar-expand-xl align-items-center bg-navbar-theme" id="layout-navbar">
@@ -27,7 +29,8 @@ $navbarDetached = ($navbarDetached ?? '');
 
       <!-- ! Not required for layout-without-menu -->
       @if(!isset($navbarHideToggle))
-      <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0{{ isset($menuHorizontal) ? ' d-xl-none ' : '' }} {{ isset($contentNavbar) ?' d-xl-none ' : '' }}">
+      <div
+        class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0{{ isset($menuHorizontal) ? ' d-xl-none ' : '' }} {{ isset($contentNavbar) ?' d-xl-none ' : '' }}">
         <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
           <i class="bx bx-menu bx-sm"></i>
         </a>
@@ -47,7 +50,7 @@ $navbarDetached = ($navbarDetached ?? '');
 
           <!-- Place this tag where you want the button to render. -->
           <li class="nav-item lh-1 me-3">
-          <span class="fw-semibold d-block">{{ $user->name }}</span>
+            <span class="fw-semibold d-block">{{ $user->name }}</span>
           </li>
 
           <!-- User -->
@@ -69,7 +72,7 @@ $navbarDetached = ($navbarDetached ?? '');
                     <div class="flex-grow-1">
                       <span class="fw-semibold d-block">{{ $user->name }}</span>
                       <small class="text-muted">{{ $data->name_role }}</small>
-                        </div>
+                    </div>
                   </div>
                 </a>
               </li>
@@ -77,16 +80,16 @@ $navbarDetached = ($navbarDetached ?? '');
                 <div class="dropdown-divider"></div>
               </li>
               <li>
-                <a class="dropdown-item" href="javascript:void(0);">
+                <a class="dropdown-item" href="{{ route('profile') }}">
                   <i class="bx bx-user me-2"></i>
-                  <span class="align-middle">My Profile</span>
+                  <span class="align-middle">Profil Saya</span>
                 </a>
               </li>
-              
+
               <li>
                 <a class="dropdown-item" href="{{ route('logout') }}">
                   <i class='bx bx-power-off me-2'></i>
-                  <span class="align-middle">Log Out</span>
+                  <span class="align-middle">Keluar</span>
                 </a>
               </li>
             </ul>

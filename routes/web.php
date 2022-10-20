@@ -15,6 +15,7 @@ use App\Http\Controllers\RealisasiController;
 use App\Http\Controllers\reports\DataPenjualan;
 use App\Http\Controllers\reports\DataProduksi;
 use App\Http\Controllers\reports\DataRealisasi;
+use App\Http\Controllers\UserController;
 use App\Http\Controllers\users\Petani;
 use App\Http\Controllers\users\Pengolah;
 use Illuminate\Support\Facades\Route;
@@ -40,6 +41,11 @@ Route::controller(Login::class)->group(function () {
     Route::get('/auth/login', 'index')->name('auth-login');
     Route::post('/auth/login/process', 'process');
     Route::get('/auth/logout', 'logout')->name('logout');
+});
+
+Route::controller(UserController::class)->group(function () {
+    Route::get('/profile', 'index')->name('profile');
+    Route::put('/profile', 'update')->name('profile.update');
 });
 
 Route::group(['middleware' => ['auth']], function () {
@@ -72,10 +78,6 @@ Route::group(['middleware' => ['auth']], function () {
     });
 
     Route::get('/data', [ProduksiController::class, 'data'])->name('data');
-    // Route::get('/produksi/delete/{id}', function($id){
-    //     dd('Delete ' . $id);
-    // })->name('delete');
-
 });
 
 // Route::get('/auth/register', $controller_path . '\authentications\Register@index')->name('auth-register');
